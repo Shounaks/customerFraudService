@@ -10,14 +10,17 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>customer</module>
+        <module>fraud</module>
+        <module>eureka-server</module>
     </modules>
 
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>
-        <spring.boot.maven.plugin.version>2.6.5</spring.boot.maven.plugin.version>
-        <spring.boot.dependencies>2.6.5</spring.boot.dependencies>
         <assertj.core.version>3.21.0</assertj.core.version>
+        <spring.boot.dependencies>2.6.5</spring.boot.dependencies>
+        <spring.boot.cloud.dependencies>2021.0.0</spring.boot.cloud.dependencies>
+        <spring.boot.maven.plugin.version>2.6.5</spring.boot.maven.plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -32,7 +35,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>2021.0.0</version>
+                <version>${spring.boot.cloud.dependencies}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

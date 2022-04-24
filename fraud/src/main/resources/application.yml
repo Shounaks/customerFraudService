@@ -1,14 +1,14 @@
 server:
-  port: 8080
+  port: 8081
 spring:
   application:
-    name: customerMS
+    name: fraudMS
   #Connect with PG-Admin    http://localhost:5050/browser/
   datasource:
     username: 'shalnark'
     password: 'password'
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/customer
+    url: jdbc:postgresql://localhost:5432/fraud
   jpa:
     hibernate:
       ddl-auto: create-drop
